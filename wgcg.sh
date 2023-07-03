@@ -672,7 +672,7 @@ case ${1} in
     gen_client_config ${1:-''} ${2:-''} ${SERVER_NAME} ${SERVER_PORT} ${SERVER_PUBLIC_IP} "${CLIENT_DNS_IPS}" "${CLIENT_ALLOWED_IPS}"
     [[ ${?} -ne 0 ]] && exit 1
     # client_name
-    gen_qr ${1}
+    # gen_qr ${1}
   ;;
   '-e'|'--encrypt-config')
     shift
